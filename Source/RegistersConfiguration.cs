@@ -14,6 +14,7 @@ namespace RaaLabs.Edge.Connectors.Modbus
     /// </summary>
     [Name("registers.json")]
     [ExcludeFromCodeCoverage]
+    [RestartOnChange]
     public class RegistersConfiguration :
         ReadOnlyCollection<Register>,
         IConfiguration
